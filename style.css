@@ -1,0 +1,257 @@
+.hero {
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 4px black;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+
+    .cta-btn {
+      background-color: #ff5722;
+      border: none;
+      padding: 12px 24px;
+      font-size: 18px;
+    }
+
+    .cta-btn:hover {
+      background-color: #e64a19;
+    }
+
+    footer {
+      background-color: #f8f9fa;
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    .price-old {
+      text-decoration: line-through;
+      color: gray;
+      font-size: 1rem;
+    }
+
+    .price-new {
+      color: red;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .buy-btn {
+      background: linear-gradient(to right, orange, red);
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 30px;
+      padding: 10px 30px;
+    }
+
+    .feature-list i {
+      color: red;
+    }
+
+    .product-box {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      padding: 20px;
+      background: white;
+    }
+
+    .product-img {
+      max-height: 350px;
+      /* hoặc 250px tùy ý */
+      width: auto;
+      object-fit: contain;
+      margin: 0 auto;
+    }
+
+    .product-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.product-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.product-description {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.05);
+}
+
+.image-caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 8px 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 ảnh mỗi hàng */
+  gap: 24px;
+  padding: 0 20px;
+}
+
+/* Tablet - 2 ảnh mỗi hàng */
+@media (max-width: 992px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile - 1 ảnh mỗi hàng */
+@media (max-width: 576px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+footer i {
+  color: #ffffff;
+}
+footer p {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+footer h5 {
+  color: #fff;
+}
+
+footer {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+              url('img/应用场景/微信图片_2025-07-10_155333_281.jpg') center/cover no-repeat;
+  color: white;
+}
+
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.popup-content {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 15px;
+  max-width: 450px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.4s ease;
+}
+
+.popup-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.popup-content h2 {
+  margin-bottom: 10px;
+  color: #28a745;
+}
+
+.popup-content p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.popup-content button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.popup-content button:hover {
+  background-color: #218838;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

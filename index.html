@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Landing Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Trong <head> -->
+  <!-- Lightbox2 CSS & JS -->
+  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link href="style.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+  <section class="hero">
+    <video autoplay muted loop playsinline class="bg-video">
+      <source src="img/video/1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-content">
+      <h1>Welcome to Our Website</h1>
+      <p>Experience comfort with every step</p>
+    </div>
+  </section>
+
+  <section id="carousel" class="container my-5">
+    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="3"></button>
+      </div>
+
+      <div class="carousel-inner rounded shadow">
+        <div class="carousel-item active">
+          <img src="img/1.png" class="d-block w-100" alt="Slide 1">
+        </div>
+        <div class="carousel-item">
+          <img src="img/2.png" class="d-block w-100" alt="Slide 2">
+        </div>
+        <div class="carousel-item">
+          <img src="img/3.png" class="d-block w-100" alt="Slide 3">
+        </div>
+        <div class="carousel-item">
+          <img src="img/4.png" class="d-block w-100" alt="Slide 4">
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+  <section id="product-info" class="container my-5">
+    <div class="row product-box align-items-center">
+      <!-- Carousel ảnh -->
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/3D拖鞋详情页/1.jpg" class="d-block w-100 product-img">
+            </div>
+            <div class="carousel-item">
+              <img src="img/3D拖鞋详情页/2.jpg" class="d-block w-100 product-img">
+            </div>
+            <div class="carousel-item">
+              <img src="img/3D拖鞋详情页/3.jpg" class="d-block w-100 product-img">
+            </div>
+            <div class="carousel-item">
+              <img src="img/3D拖鞋详情页/4.jpg" class="d-block w-100 product-img">
+            </div>
+            <div class="carousel-item">
+              <img src="img/3D拖鞋详情页/5.jpg" class="d-block w-100 product-img">
+            </div>
+            <div class="carousel-item">
+              <img src="img/3D拖鞋详情页/6.jpg" class="d-block w-100 product-img">
+            </div>
+            <div class="carousel-item">
+              <img src="img/3D拖鞋详情页/7.jpg" class="d-block w-100 product-img">
+            </div>
+            <div class="carousel-item">
+              <img src="img/3D拖鞋详情页/8.jpg" class="d-block w-100 product-img">
+            </div>
+            <div class="carousel-item">
+              <img src="img/3D拖鞋详情页/9.jpg" class="d-block w-100 product-img">
+            </div>
+            <div class="carousel-item">
+              <img src="img/3D拖鞋详情页/10.jpg" class="d-block w-100 product-img">
+            </div>
+            <div class="carousel-item">
+              <img src="img/3D拖鞋详情页/11.jpg" class="d-block w-100 product-img">
+            </div>
+            <div class="carousel-item">
+              <img src="img/3D拖鞋详情页/12.jpg" class="d-block w-100 product-img">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <h2 class="fw-bold">MXL 3D Sandal Black</h2>
+        <div class="mb-2">
+          <span class="text-warning">★ 4.5</span>
+          <span class="ms-2 text-muted">4580 Reviews</span> •
+          <span class="text-muted">1659 Units Sold</span>
+        </div>
+        <div class="mb-2">
+          <span class="price-old">65 USD</span>
+          <span class="price-new ms-2">59 USD</span>
+        </div>
+        <div class="mb-3">
+          <button class="btn btn-danger btn-lg">Buy 10 Pairs – Only $51 Each!</button>
+        </div>
+        <div class="bg-light p-3 rounded">
+          <ul class="list-unstyled mb-0">
+            <li><strong>Material:</strong> Exceptional Elasticity & Comfort</li>
+            <li> Light-sensitive, high-resilience material for a softer feel and better
+              impact
+              performance.</li>
+            <li><strong>Design:</strong> Energetic and stylish — perfect for any age!</li>
+            <li><strong>Size:</strong> EU 40–46</li>
+          </ul>
+        </div>
+        <div class="mt-4">
+          <button class="buy-btn"><a href="#form" style="text-decoration: none; color: white;">Buy Now</a></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding: 40px 20px; font-family: Arial, sans-serif;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 1000px; margin: 0 auto;">
+
+      <!-- Box 1 -->
+      <div
+        style="flex: 1 1 300px; display: flex; align-items: center; background: linear-gradient(to right, #28aee6, #3db8ed); border-radius: 12px; padding: 20px; color: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <div
+          style="background-color: #ffcd00; border-radius: 50%; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; margin-right: 16px;">
+          <img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" alt="Box icon"
+            style="width: 24px; height: 24px;">
+        </div>
+        <div style="font-size: 15px; font-weight: bold;">
+          1-to-1 exchange for size issues or manufacturer defects.<br>12-month warranty.
+        </div>
+      </div>
+
+      <!-- Box 2 -->
+      <div
+        style="flex: 1 1 300px; display: flex; align-items: center; background: linear-gradient(to right, #28aee6, #3db8ed); border-radius: 12px; padding: 20px; color: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <div
+          style="background-color: #ffcd00; border-radius: 50%; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; margin-right: 16px;">
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968924.png" alt="Truck icon"
+            style="width: 24px; height: 24px;">
+        </div>
+        <div style="font-size: 15px; font-weight: bold;">
+          Nationwide delivery – check items before payment.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="product-info" class="container my-5">
+    <div class="row product-box align-items-center">
+      <!-- Carousel ảnh -->
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <div id="productCarousel1" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/product/DSC_0059.jpg" class="d-block w-100 product-img">
+            </div>
+            <div class="carousel-item">
+              <img src="img/product/DSC_0069.jpg" class="d-block w-100 product-img">
+            </div>
+            <div class="carousel-item">
+              <img src="img/product/DSC_0072.jpg" class="d-block w-100 product-img">
+            </div>
+            <div class="carousel-item">
+              <img src="img/product/DSC_0074.jpg" class="d-block w-100 product-img">
+            </div>
+            <div class="carousel-item">
+              <img src="img/product/DSC_0077.jpg" class="d-block w-100 product-img">
+            </div>
+            <div class="carousel-item">
+              <img src="img/product/DSC_0081.jpg" class="d-block w-100 product-img">
+            </div>
+            <div class="carousel-item">
+              <img src="img/高清图1.jpg" class="d-block w-100 product-img">
+            </div>
+            <div class="carousel-item">
+              <img src="img/高清图2.jpg" class="d-block w-100 product-img">
+            </div>
+            <div class="carousel-item">
+              <img src="img/高清图3.jpg" class="d-block w-100 product-img">
+            </div>
+            <div class="carousel-item">
+              <img src="img/高清图4.jpg" class="d-block w-100 product-img">
+            </div>
+            <div class="carousel-item">
+              <img src="img/高清图5.jpg" class="d-block w-100 product-img">
+            </div>
+            <div class="carousel-item">
+              <img src="img/高清图6.jpg" class="d-block w-100 product-img">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#productCarousel1" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <h2 class="fw-bold">MXL 3D Printed Shoes</h2>
+        <div class="mb-2">
+          <span class="text-warning">★ 5.0</span>
+          <span class="ms-2 text-muted">8581 Reviews</span> •
+          <span class="text-muted">3658 Units Sold</span>
+        </div>
+        <div class="mb-2">
+          <span class="price-old">205 USD</span>
+          <span class="price-new ms-2">199 USD</span>
+        </div>
+        <div class="mb-3">
+          <button class="btn btn-danger btn-lg">Shock Deal: $130/Pair When You Buy 10!</button>
+        </div>
+        <div class="bg-light p-3 rounded">
+          <ul class="list-unstyled mb-0">
+            <li><strong>Material:</strong> Exceptional Elasticity & Comfort</li>
+            <li> Light-sensitive, high-resilience material for a softer feel and better
+              impact
+              performance.</li>
+            <li><strong>Design:</strong> Energetic and stylish — perfect for any age! This style is available in 6
+              colors</li>
+            <li><strong>Size:</strong> EU 40–46</li>
+          </ul>
+        </div>
+        <div class="mt-4">
+          <button class="buy-btn"><a href="#form" style="text-decoration: none; color: white;">Buy Now</a></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="product-section">
+    <h2 class="product-title">PRODUCT IMAGES</h2>
+    <p class="product-description">
+      Discover our latest sneaker collection featuring cutting-edge designs, vibrant colors, and unmatched comfort.
+      Each pair is crafted for style, performance, and everyday wear.
+    </p>
+
+    <div class="product-grid container">
+      <!-- Item -->
+      <div class="product-card">
+        <a href="img/product/DSC_0059.jpg" data-lightbox="product-gallery" data-title="GT1">
+          <div class="image-wrapper">
+            <img src="img/product/DSC_0059.jpg" alt="GT1">
+            <div class="image-caption">GT1</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="product-card">
+        <a href="img/product/DSC_0069.jpg" data-lightbox="product-gallery" data-title="GT10">
+          <div class="image-wrapper">
+            <img src="img/product/DSC_0069.jpg" alt="GT10">
+            <div class="image-caption">GT10</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="product-card">
+        <a href="img/product/DSC_0072.jpg" data-lightbox="product-gallery" data-title="GT11">
+          <div class="image-wrapper">
+            <img src="img/product/DSC_0072.jpg" alt="GT11">
+            <div class="image-caption">GT11</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="product-card">
+        <a href="img/product/DSC_0074.jpg" data-lightbox="product-gallery" data-title="GT05">
+          <div class="image-wrapper">
+            <img src="img/product/DSC_0074.jpg" alt="GT05">
+            <div class="image-caption">GT05</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="product-card">
+        <a href="img/product/DSC_0077.jpg" data-lightbox="product-gallery" data-title="GT06">
+          <div class="image-wrapper">
+            <img src="img/product/DSC_0077.jpg" alt="GT06">
+            <div class="image-caption">GT06</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="product-card">
+        <a href="img/product/DSC_0081.jpg" data-lightbox="product-gallery" data-title="MS04">
+          <div class="image-wrapper">
+            <img src="img/product/DSC_0081.jpg" alt="MS04">
+            <div class="image-caption">MS04</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="most-popular-product" class="container my-5">
+    <h2 class="fw-bold text-center mb-4">Most Popular Product</h2>
+    <div class="row product-box align-items-center">
+      <!-- Product Image Carousel -->
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <div id="productCarousel2" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/迪奥高端品牌/微信图片_2025-07-10_155132_299.jpg" class="d-block w-100 product-img"
+                alt="Product Image 1">
+            </div>
+            <div class="carousel-item">
+              <img src="img/迪奥高端品牌/微信图片_2025-07-10_155137_267.jpg" class="d-block w-100 product-img"
+                alt="Product Image 2">
+            </div>
+            <div class="carousel-item">
+              <img src="img/迪奥高端品牌/微信图片_2025-07-10_155142_307.jpg" class="d-block w-100 product-img"
+                alt="Product Image 3">
+            </div>
+            <div class="carousel-item">
+              <img src="img/迪奥高端品牌/微信图片_2025-07-10_155148_530.jpg" class="d-block w-100 product-img"
+                alt="Product Image 4">
+            </div>
+            <div class="carousel-item">
+              <img src="img/迪奥高端品牌/微信图片_2025-07-10_155240_912.jpg" class="d-block w-100 product-img"
+                alt="Product Image 5">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#productCarousel2" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Product Info -->
+      <div class="col-lg-6">
+        <h3 class="fw-bold">MXL 3D Printed Shoes</h3>
+        <div class="mb-2">
+          <span class="text-warning">★ 5.0</span>
+          <span class="ms-2 text-muted">1581 Reviews</span> •
+          <span class="text-muted">2658 Units Sold</span>
+        </div>
+        <div class="mb-2">
+          <span class="price-old text-muted text-decoration-line-through">505 USD</span>
+          <span class="price-new ms-2 fw-bold text-danger">499 USD</span>
+        </div>
+        <div class="bg-light p-3 rounded">
+          <ul class="list-unstyled mb-0">
+            <li><strong>Material:</strong> Outstanding elasticity and comfort</li>
+            <li>Light-responsive, high-resilience foam offering superior softness and impact absorption.</li>
+            <li><strong>Design:</strong> Vibrant and trendy – ideal for all age groups</li>
+            <li><strong>Size Range:</strong> EU 40–46</li>
+          </ul>
+        </div>
+        <div class="mt-4">
+          <button class="buy-btn"><a href="#form" style="text-decoration: none; color: white;">Buy Now</a></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="container my-5 text-center">
+    <h2 class="mb-4">Why choose our 3D slippers?</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <i class="bi bi-speedometer2 fs-1 text-primary"></i>
+        <h5>Fast Delivery</h5>
+        <p>Get your stylish 3D slippers in just a few days</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <i class="bi bi-lock-fill fs-1 text-primary"></i>
+        <h5>Premium Quality</h5>
+        <p>Durable, comfortable & made with top-grade materials</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <i class="bi bi-chat-dots fs-1 text-primary"></i>
+        <h5>Customer Support</h5>
+        <p>We’re always here to assist you</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section-only-images py-5">
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-6 col-md-4">
+          <img src="img/6.png" class="img-fluid rounded shadow-sm">
+        </div>
+        <div class="col-6 col-md-4">
+          <img src="img/7.png" class="img-fluid rounded shadow-sm">
+        </div>
+        <div class="col-6 col-md-4">
+          <img src="img/12.png" class="img-fluid rounded shadow-sm">
+        </div>
+        <div class="col-6 col-md-4">
+          <img src="img/9.png" class="img-fluid rounded shadow-sm">
+        </div>
+        <div class="col-6 col-md-4">
+          <img src="img/老外代言2.jpg" class="img-fluid rounded shadow-sm">
+        </div>
+        <div class="col-6 col-md-4">
+          <img src="img/5.png" class="img-fluid rounded shadow-sm">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="form" class="bg-light py-5">
+    <div class="container" style="max-width: 720px;">
+      <div class="bg-white p-5 rounded shadow">
+        <h2 class="text-center mb-4 fw-bold text-primary">Register for Free Consultation</h2>
+        <p class="text-center text-muted mb-5">
+          Leave your information and we'll help you choose the perfect pair of 3D slippers!
+        </p>
+
+        <form id="consultForm">
+          <div class="row g-3">
+            <div class="col-md-12">
+              <input type="text" name="Full Name" class="form-control form-control-lg shadow-sm rounded-3"
+                placeholder="Full Name *" required>
+            </div>
+            <div class="col-md-6">
+              <input type="email" name="Email" class="form-control form-control-lg shadow-sm rounded-3"
+                placeholder="Email *" required>
+            </div>
+            <div class="col-md-6">
+              <input type="tel" name="Phone" class="form-control form-control-lg shadow-sm rounded-3"
+                placeholder="Phone Number *" required>
+            </div>
+            <div class="col-md-12">
+              <input type="text" name="Address" class="form-control form-control-lg shadow-sm rounded-3"
+                placeholder="Address *" required>
+            </div>
+            <div class="col-12 text-center">
+              <button type="submit" class="btn btn-primary btn-lg px-5 mt-4 shadow rounded-pill">
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container text-md-left">
+      <div class="row">
+
+        <!-- Company Info -->
+        <div class="col-md-6">
+          <h5 class="text-uppercase fw-bold mb-4">mxl.com - MXL 3D</h5>
+          <p><i class="bi bi-geo-alt-fill me-2"></i>Address: Address number, Street, District, City, District</p>
+          <p><i class="bi bi-telephone-fill me-2"></i>Hotline: +86 13728685331</p>
+          <p><i class="bi bi-envelope-fill me-2"></i>Email: email@mystore.com</p>
+          <p><i class="bi bi-globe me-2"></i>Website: www.mxl.com</p>
+        </div>
+
+        <!-- Customer Service -->
+        <div class="col-md-6">
+          <h5 class="text-uppercase fw-bold mb-4">Customer Service</h5>
+          <p><i class="bi bi-receipt-cutoff me-2"></i>Returns & Shipping Policy</p>
+          <p><i class="bi bi-file-earmark-text me-2"></i>Terms of Use</p>
+          <p><i class="bi bi-shield-lock-fill me-2"></i>Privacy Policy</p>
+          <p><i class="bi bi-chat-dots-fill me-2"></i>Contact Us</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="text-center mt-4 border-top pt-3">
+      <p class="mb-0">&copy; 2020 All rights reserved mystore.com</p>
+    </div>
+  </footer>
+
+  <!-- Popup Success Message -->
+  <!-- Thank You Popup -->
+  <div id="thankYouPopup" class="popup-overlay hidden">
+    <div class="popup-content">
+      <div class="popup-icon">🎉</div>
+      <h2>Thank You!</h2>
+      <p>Your information has been submitted successfully.<br>We will contact you shortly.</p>
+      <button onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox-plus-jquery.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.getElementById("consultForm");
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        const formData = new FormData(form);
+
+        fetch("https://formsubmit.co/ajax/ngkien2468@gmail.com", {
+          method: "POST",
+          body: formData
+        })
+          .then(response => {
+            if (response.ok) {
+              form.reset();
+              openPopup(); // Hiển thị popup
+            } else {
+              alert("❌ Submission failed. Please try again.");
+            }
+          })
+          .catch(error => {
+            console.error("Error:", error);
+            alert("❌ There was an error. Please try again later.");
+          });
+      });
+    });
+
+    function openPopup() {
+      document.getElementById("thankYouPopup").classList.remove("hidden");
+    }
+
+    function closePopup() {
+      document.getElementById("thankYouPopup").classList.add("hidden");
+    }
+
+  </script>
+
+</body>
+
+</html>
